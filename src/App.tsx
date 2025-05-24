@@ -1,12 +1,13 @@
-// src/App.tsx
 import React from "react";
 import { StarknetProvider } from "./providers/StarknetProvider";
-import { ConnectWallet } from "./components/ConnectWallet";
+import { WalletConnector } from "./features/wallet/components/WalletConnector";
 
 function App() {
   return (
     <StarknetProvider>
-      <ConnectWallet />
+      <main className="app-container">
+        <WalletConnector />
+      </main>
     </StarknetProvider>
   );
 }
