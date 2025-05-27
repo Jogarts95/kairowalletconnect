@@ -2,11 +2,14 @@
 import React from "react";
 import { StarknetProvider } from "./providers/StarknetProvider";
 import { ConnectWallet } from "./components/ConnectWallet";
+import LandingPage from "./pages/LandingPage";
 
 function App() {
   return (
     <StarknetProvider>
-      <ConnectWallet />
+      <LandingPage>
+        <ConnectWallet />
+      </LandingPage>
     </StarknetProvider>
   );
 }
